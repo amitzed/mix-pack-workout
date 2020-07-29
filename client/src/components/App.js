@@ -6,10 +6,12 @@ import WorkoutCreate from './workouts/WorkoutCreate';
 import WorkoutEdit from './workouts/WorkoutEdit';
 import WorkoutDelete from './workouts/WorkoutDelete';
 import WorkoutShow from './workouts/WorkoutShow';
+import Header from './Header';
 
 const App = () => {
   return (
     <div>
+      <Header />
       <BrowserRouter>
         <Route path="/" exact component={WorkoutList} />
         <Route path="/workouts/new" exact component={WorkoutCreate} />
