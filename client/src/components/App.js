@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import WorkoutList from './workouts/WorkoutList';
 import WorkoutCreate from './workouts/WorkoutCreate';
@@ -10,9 +10,9 @@ import Header from './Header';
 
 const App = () => {
   return (
-    <div>
-      <Header />
+    <div className="ui container">
       <BrowserRouter>
+        <Header />
         <Route path="/" exact component={WorkoutList} />
         <Route path="/workouts/new" exact component={WorkoutCreate} />
         <Route path="/workouts/edit" exact component={WorkoutEdit} />
