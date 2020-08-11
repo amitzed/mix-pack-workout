@@ -27,6 +27,14 @@ class GoogleAuth extends React.Component {
     });
   }
 
+  onSignIn = () => {
+    this.auth.signIn();
+  }
+
+  onSignOut = () => {
+    this.auth.signOut();
+  }
+
   renderAuthBtn() {
     if(this.state.isSignedIn === null) {
       return null;
