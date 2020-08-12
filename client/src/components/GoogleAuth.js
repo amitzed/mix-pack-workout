@@ -27,11 +27,11 @@ class GoogleAuth extends React.Component {
     });
   }
 
-  onSignIn = () => {
+  onSignInClick = () => {
     this.auth.signIn();
   }
 
-  onSignOut = () => {
+  onSignOutClick = () => {
     this.auth.signOut();
   }
 
