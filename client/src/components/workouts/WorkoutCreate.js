@@ -2,10 +2,10 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
 class WorkoutCreate extends React.Component {
-  renderInput(formProps) {
+  renderInput({ input }) {
     return (
       <div>
-        <input {...formProps.input} />
+        <input {...input} />
       </div>
     )
   }
