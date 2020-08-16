@@ -5,10 +5,7 @@ class WorkoutCreate extends React.Component {
   renderInput(formProps) {
     return (
       <div>
-        <input
-          onChange={formProps.input.onChange}
-          value={formProps.input.value}
-        />
+        <input {...formProps.input} />
       </div>
     )
   }
