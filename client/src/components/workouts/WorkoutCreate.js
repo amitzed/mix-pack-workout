@@ -1,11 +1,13 @@
 import React from 'react';
 
-const WorkoutCreate = () => {
-  return (
-    <div>
-      WorkoutCreate
-    </div>
-  );
+class WorkoutCreate extends React.Component {
+  render() {
+    return (
+      <div>
+        WorkoutCreate
+      </div>
+    );
+  }
 }
 
 export default WorkoutCreate;
