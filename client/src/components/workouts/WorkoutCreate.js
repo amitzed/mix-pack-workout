@@ -2,17 +2,28 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
 class WorkoutCreate extends React.Component {
-  renderInput({ input, label, meta }) {
+  renderError({ error, touched }) {
+    if(error && touched) {
+      return (
+        <div className="ui error message">
+          <div className="header">{error}</div>
+        </div>
+      )
+    }
+  }
+
+  renderInput = ({ input, label, meta }) => {
+    const  errorRedField = `field ${meta.error && meta.touched ? 'error' : ''}`;
 
     return (
-      <div>
+      <div className={errorRedField}>
         <input
           {...input}
           placeholder={label}
           style={{textAlign: 'center'}}
           autoComplete="off"
         />
-        <div>{meta.error}</div>
+      {this.renderError(meta)}
       </div>
     )
   }
@@ -30,7 +41,7 @@ class WorkoutCreate extends React.Component {
         </h2>
 
         <form
-          className="ui inverted form large form-basic"
+          className="ui inverted form large error form-basic"
           onSubmit={this.props.handleSubmit(this.onSubmit)}
         >
           <div className="fields ui one column center aligned grid">
@@ -161,10 +172,10 @@ const validate = (formValues) => {
   const errors = {}
 
   if(!formValues.day) {
-    errors.day = 'Day &/or Date of workout must be entered';
+    errors.day = 'Day &/or Date must be entered';
   }
   if(!formValues.exercise1Title) {
-    errors.exercise1Title = 'At least one exercise must be entered';
+    errors.exercise1Title = 'Enter at least one exercise';
   }
   return errors;
 }
