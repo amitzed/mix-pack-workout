@@ -5,21 +5,28 @@ class WorkoutCreate extends React.Component {
   renderInput({ input, label }) {
     return (
       <div>
-        <input {...input} placeholder={label} />
+        <input {...input} placeholder={label} style={{textAlign: 'center'}} />
 
       </div>
     )
   }
 
+  onSubmit(formValues) {
+    console.log(formValues);
+  }
+
   render() {
-    console.log(this.props);
     return (
       <div className="ui inverted segment">
-        <h2 class="ui center aligned icon header">
-          <i class="circular green flask icon"></i>
+        <h2 className="ui center aligned icon header">
+          <i className="circular green flask icon"></i>
           Enter Workout Details
         </h2>
-        <form className="ui inverted form large">
+
+        <form
+          className="ui inverted form large form-basic"
+          onSubmit={this.props.handleSubmit(this.onSubmit)}
+        >
           <div className="fields ui one column center aligned grid">
             <div className="five wide field">
               <Field
@@ -30,7 +37,7 @@ class WorkoutCreate extends React.Component {
             </div>
           </div>
 
-          <div className="fields ui one column center aligned grid">
+          <div className="fields ui one column center aligned grid" style={{marginTop: '2.5em'}}>
             <div className="four wide field">
               <Field
                 name="exercise1Title"
@@ -57,7 +64,7 @@ class WorkoutCreate extends React.Component {
               </div>
             </div>
 
-          <div className="fields ui one column center aligned grid">
+          <div className="fields ui one column center aligned grid" style={{marginTop: '2.5em'}}>
             <div className="four wide field">
               <Field
                 name="exercise2Title"
@@ -84,7 +91,7 @@ class WorkoutCreate extends React.Component {
               </div>
             </div>
 
-          <div className="fields ui one column center aligned grid">
+          <div className="fields ui one column center aligned grid" style={{marginTop: '2.5em'}}>
             <div className="four wide field">
               <Field
                 name="exercise3Title"
@@ -111,7 +118,7 @@ class WorkoutCreate extends React.Component {
               </div>
             </div>
 
-          <div className="fields ui one column center aligned grid">
+          <div className="fields ui one column center aligned grid" style={{marginTop: '2.5em'}}>
             <div className="four wide field">
               <Field
                 name="cardioType"
@@ -129,6 +136,13 @@ class WorkoutCreate extends React.Component {
                 label="Cardio Time"
               />
             </div>
+          </div>
+
+          <div className="button-wrapper">
+            <button className="ui inverted green button large">
+              <i className="save outline icon"></i>
+              Save Workout
+            </button>
           </div>
 
         </form>

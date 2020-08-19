@@ -1,0 +1,13 @@
+.form-basic {
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 1.25em 0;
+  }
+
+  @media(max-width: 414px) {
+    .button-wrapper {
+      margin-top: 1.75em;
+    }
+  }
+}
