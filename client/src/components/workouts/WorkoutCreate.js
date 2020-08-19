@@ -2,11 +2,17 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
 class WorkoutCreate extends React.Component {
-  renderInput({ input, label }) {
+  renderInput({ input, label, meta }) {
+
     return (
       <div>
-        <input {...input} placeholder={label} style={{textAlign: 'center'}} />
-
+        <input
+          {...input}
+          placeholder={label}
+          style={{textAlign: 'center'}}
+          autoComplete="off"
+        />
+        <div>{meta.error}</div>
       </div>
     )
   }
@@ -32,7 +38,7 @@ class WorkoutCreate extends React.Component {
               <Field
                 name="day"
                 component={this.renderInput}
-                label="Day"
+                label="Day/Date"
               />
             </div>
           </div>
@@ -151,6 +157,19 @@ class WorkoutCreate extends React.Component {
   }
 }
 
+const validate = (formValues) => {
+  const errors = {}
+
+  if(!formValues.day) {
+    errors.day = 'Day &/or Date of workout must be entered';
+  }
+  if(!formValues.exercise1Title) {
+    errors.exercise1Title = 'At least one exercise must be entered';
+  }
+  return errors;
+}
+
 export default reduxForm({
-  form: 'workoutCreate'
+  form: 'workoutCreate',
+  validate
 }) (WorkoutCreate);
