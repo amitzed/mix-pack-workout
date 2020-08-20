@@ -6,7 +6,7 @@ class WorkoutCreate extends React.Component {
     if(error && touched) {
       return (
         <div className="ui error message">
-          <div className="header">{error}</div>
+          <div className="header" style={{textAlign: 'center'}}>{error}</div>
         </div>
       )
     }
@@ -172,7 +172,7 @@ const validate = (formValues) => {
   const errors = {}
 
   if(!formValues.day) {
-    errors.day = 'Day &/or Date must be entered';
+    errors.day = 'Day or Date must be entered';
   }
   if(!formValues.exercise1Title) {
     errors.exercise1Title = 'Enter at least one exercise';
