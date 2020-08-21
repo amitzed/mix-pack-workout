@@ -1,3 +1,4 @@
+import workouts from '../apis/workouts';
 import { SIGN_IN, SIGN_OUT } from './types';
 
 export const signIn = (userId) => {
@@ -12,3 +13,7 @@ export const signOut = () => {
     type: SIGN_OUT
   }
 };
+
+export const createWorkout = (formValues) => async (dispatch) => {
+  workouts.post('/workouts', formValues)
+}
