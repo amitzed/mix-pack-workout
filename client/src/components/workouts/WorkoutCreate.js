@@ -32,7 +32,7 @@ class WorkoutCreate extends React.Component {
   }
 
   onSubmit(formValues) {
-    console.log(formValues);
+    this.props.createWorkout(formValues)
   }
 
   render() {
@@ -183,7 +183,12 @@ const validate = (formValues) => {
   return errors;
 }
 
-export default reduxForm({
+const formWrapped = reduxForm({
   form: 'workoutCreate',
   validate
 }) (WorkoutCreate);
+
+export default connect(
+  null,
+  {createWorkout}
+)(formWrapped);
