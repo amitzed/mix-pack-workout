@@ -1,3 +1,24 @@
 {
-  "workouts": []
+  "workouts": [
+    {
+      "day": "Monday",
+      "exercise1Title": "Bench",
+      "id": 1
+    },
+    {
+      "day": "Tuesday",
+      "exercise1Title": "Squat",
+      "exercise1Sets": "5",
+      "exercise1Reps": "5",
+      "exercise2Title": "Bench Press",
+      "exercise2Sets": "5",
+      "exercise2Reps": "5",
+      "exercise3Title": "Barbell Row",
+      "exercise3Sets": "5",
+      "exercise3Reps": "5",
+      "cardioType": "Treadmill",
+      "cardioTime": "20",
+      "id": 2
+    }
+  ]
 }

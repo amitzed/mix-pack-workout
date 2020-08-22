@@ -1,13 +1,14 @@
 # Mix Pack Workout --> Client
 
-## To create your own Google Auth sign in for users:
+## (A) To create your own Google Auth sign in for users:
 #### 1. Go to console.developers.google.com
 #### 2. Create a new project -> name it -> click Create
 #### 3. Go to credentials -> choose external -> Create
 #### 4. Enter your app name -> click save
-#### 5. At root of application create a .env file and inside type:
+#### 5. At root of this (CLIENT) part of application create a .env file and inside type:
 #### a) REACT_APP_GOOGLE_API_CLIENT_ID=Enter your client id here
 #### b) REACT_APP_GOOGLE_API_SCOPE=email
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

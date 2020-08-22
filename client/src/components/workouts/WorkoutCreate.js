@@ -31,7 +31,7 @@ class WorkoutCreate extends React.Component {
     )
   }
 
-  onSubmit(formValues) {
+  onSubmit = (formValues) => {
     this.props.createWorkout(formValues)
   }
 
