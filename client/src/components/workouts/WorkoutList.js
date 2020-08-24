@@ -17,7 +17,11 @@ class WorkoutList extends React.Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {workouts: Object.values(state.workouts)};
+}
+
 export default connect(
-  null,
+  mapStateToProps,
   {fetchWorkouts}
 )(WorkoutList);
