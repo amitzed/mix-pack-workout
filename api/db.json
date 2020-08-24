@@ -34,6 +34,13 @@
       "cardioType": "Lateral Machine",
       "cardioTime": "20",
       "id": 3
+    },
+    {
+      "day": "Thursday",
+      "exercise1Title": "No Lifts only Cardio",
+      "cardioType": "Jogging",
+      "cardioTime": "60 minutes",
+      "id": 4
     }
   ]
 }

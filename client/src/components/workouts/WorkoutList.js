@@ -1,11 +1,23 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-const WorkoutList = () => {
-  return (
-    <div>
-      WorkoutList
-    </div>
-  );
+import { fetchWorkouts } from '../../actions';
+
+class WorkoutList extends React.Component {
+  componentDidMount() {
+    this.props.fetchWorkouts();
+  }
+
+  render() {
+    return (
+      <div>
+        WorkoutList
+      </div>
+    );
+  }
 }
 
-export default WorkoutList;
+export default connect(
+  null,
+  {fetchWorkouts}
+)(WorkoutList);
