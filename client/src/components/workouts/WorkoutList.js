@@ -11,11 +11,26 @@ class WorkoutList extends React.Component {
   renderList() {
     return this.props.workouts.map(workout => {
       return (
-        <div key={workout.id}>
+        <div className="" key={workout.id}>
           <div>
             {workout.day}
             <div>
-              {workout.exercise1Title}
+              Exercise: {workout.exercise1Title}
+            </div>
+            <div>
+              {
+                !workout.exercise1Sets
+                ?
+                <div>
+                  {workout.exercise1Sets}
+                  {workout.exercise1Reps}
+                </div>
+                :
+                <div>
+                  Sets: {workout.exercise1Sets}
+                  Reps: {workout.exercise1Reps}
+                </div>
+              }
             </div>
           </div>
         </div>
@@ -27,7 +42,7 @@ class WorkoutList extends React.Component {
     return (
       <div>
         <h2>WorkoutList</h2>
-        <div>
+        <div className="ui centered grid">
           {this.renderList()}
         </div>
       </div>
