@@ -1,11 +1,6 @@
 {
   "workouts": [
     {
-      "day": "Monday",
-      "exercise1Title": "Bench",
-      "id": 1
-    },
-    {
       "day": "Tuesday",
       "exercise1Title": "Squat",
       "exercise1Sets": "5",
@@ -41,6 +36,13 @@
       "cardioType": "Jogging",
       "cardioTime": "60 minutes",
       "id": 4
+    },
+    {
+      "day": "Friday",
+      "exercise1Title": "Bicep Curls",
+      "exercise1Sets": "3",
+      "exercise1Reps": "2",
+      "id": 5
     }
   ]
 }
