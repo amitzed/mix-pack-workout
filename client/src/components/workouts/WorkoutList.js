@@ -15,12 +15,13 @@ class WorkoutList extends React.Component {
           <div className="ui segments">
 
             <div className="ui inverted brown center aligned segment" style={{margin: '1em'}}>
+              <i className="large middle aligned icon calendar alternate outline" />
               <p>{workout.day}</p>
             </div>
 
             <div className="ui segments">
               <div className="ui inverted center aligned segment">
-
+                <i className="large circular green flask icon"></i>
                 <p>
                   {
                     !workout.exercise1Title
@@ -30,22 +31,24 @@ class WorkoutList extends React.Component {
                     <span>Exercise 1: {workout.exercise1Title}</span>
                   }
                 </p>
-                <div className="ui segments">
+
                   {
-                    !workout.exercise1Sets
+                    !workout.exercise1Sets && !workout.exercise1Reps
                     ?
                     null
                     :
-                    <div className="ui horizontal segments">
-                      <div className="ui secondary inverted segment">
-                        <p>Sets: {workout.exercise1Sets}</p>
-                      </div>
-                      <div className="ui tertiary inverted segment">
-                        <p>Reps: {workout.exercise1Reps}</p>
+                    <div className="ui segments">
+                      <div className="ui horizontal segments">
+                        <div className="ui secondary inverted segment">
+                          <p>Sets: {workout.exercise1Sets}</p>
+                        </div>
+                        <div className="ui tertiary inverted segment">
+                          <p>Reps: {workout.exercise1Reps}</p>
+                        </div>
                       </div>
                     </div>
                   }
-                </div>
+
                 <p>
                   {
                     !workout.exercise2Title
@@ -55,22 +58,24 @@ class WorkoutList extends React.Component {
                     <span>Exercise 2: {workout.exercise2Title}</span>
                   }
                 </p>
-                <div className="ui segments">
+
                   {
-                    !workout.exercise2Sets
+                    !workout.exercise2Sets && !workout.exercise2Reps
                     ?
                     null
                     :
-                    <div className="ui horizontal segments">
-                      <div className="ui secondary inverted segment">
-                        <p>Sets: {workout.exercise2Sets}</p>
-                      </div>
-                      <div className="ui tertiary inverted segment">
-                        <p>Reps: {workout.exercise2Reps}</p>
+                    <div className="ui segments">
+                      <div className="ui horizontal segments">
+                        <div className="ui secondary inverted segment">
+                          <p>Sets: {workout.exercise2Sets}</p>
+                        </div>
+                        <div className="ui tertiary inverted segment">
+                          <p>Reps: {workout.exercise2Reps}</p>
+                        </div>
                       </div>
                     </div>
                   }
-                </div>
+
                 <p>
                   {
                     !workout.exercise3Title
@@ -80,22 +85,23 @@ class WorkoutList extends React.Component {
                     <span>Exercise 3: {workout.exercise3Title}</span>
                   }
                 </p>
-                <div className="ui segments">
+
                   {
-                    !workout.exercise3Sets
+                    !workout.exercise3Sets && !workout.exercise3Reps
                     ?
                     null
                     :
-                    <div className="ui horizontal segments">
-                      <div className="ui secondary inverted segment">
-                        <p>Sets: {workout.exercise3Sets}</p>
-                      </div>
-                      <div className="ui tertiary inverted segment">
-                        <p>Reps: {workout.exercise3Reps}</p>
+                    <div className="ui segments">
+                      <div className="ui horizontal segments">
+                        <div className="ui secondary inverted segment">
+                          <p>Sets: {workout.exercise3Sets}</p>
+                        </div>
+                        <div className="ui tertiary inverted segment">
+                          <p>Reps: {workout.exercise3Reps}</p>
+                        </div>
                       </div>
                     </div>
                   }
-                </div>
 
                 {
                   !workout.cardioTime || !workout.cardioType
@@ -124,7 +130,10 @@ class WorkoutList extends React.Component {
   render() {
     return (
       <div className="">
-        <h2>WorkoutList</h2>
+        <h2 className="ui center aligned icon header">
+          <i className="circular green eye dropper icon"></i>
+          WorkoutList
+        </h2>
         <div className="ui stackable four column grid">
           {this.renderList()}
         </div>

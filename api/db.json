@@ -43,6 +43,42 @@
       "exercise1Sets": "3",
       "exercise1Reps": "2",
       "id": 5
+    },
+    {
+      "day": "Saturday",
+      "exercise1Title": "Squat",
+      "exercise1Sets": "5",
+      "exercise1Reps": "4",
+      "exercise2Title": "Overhead Press",
+      "exercise2Sets": "5",
+      "exercise2Reps": "4",
+      "exercise3Title": "Deadlift",
+      "exercise3Sets": "1",
+      "exercise3Reps": "5",
+      "cardioType": "Lateral Machine",
+      "cardioTime": "20",
+      "id": 6
+    },
+    {
+      "day": "Sunday",
+      "exercise1Title": "No Lifts only Cardio",
+      "cardioType": "Jogging",
+      "cardioTime": "60 minutes",
+      "id": 7
+    },
+    {
+      "day": "Monday",
+      "exercise1Title": "Bicep Curls",
+      "exercise1Sets": "3",
+      "exercise1Reps": "2",
+      "id": 8
+    },
+    {
+      "day": "Tuesday",
+      "exercise1Title": "Bicep Curls",
+      "exercise1Sets": "3",
+      "exercise1Reps": "2",
+      "id": 9
     }
   ]
 }

@@ -7,6 +7,7 @@ import WorkoutEdit from './workouts/WorkoutEdit';
 import WorkoutDelete from './workouts/WorkoutDelete';
 import WorkoutShow from './workouts/WorkoutShow';
 import Header from './Header';
+import Footer from './Footer';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/workouts/edit" exact component={WorkoutEdit} />
         <Route path="/workouts/delete" exact component={WorkoutDelete} />
         <Route path="/workouts/show" exact component={WorkoutShow} />
+        <Footer />
       </BrowserRouter>
     </div>
   )
