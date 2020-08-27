@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="doubling four column row link-wrapper">
             <div className="ui inverted brown center aligned segment link-item" style={{margin: '1em'}}>
               <a href="https://stronglifts.com/squat/" target="_blank">
-                <i className="middle aligned icon video" />
+                <i className="large middle aligned icon video" />
                 Squat</a>
             </div>
 

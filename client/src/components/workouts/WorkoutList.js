@@ -129,8 +129,8 @@ class WorkoutList extends React.Component {
 
   render() {
     return (
-      <div className="">
-        <h2 className="ui center aligned icon header">
+      <div>
+        <h2 className="ui center aligned icon header medium">
           <i className="circular green eye dropper icon"></i>
           WorkoutList
         </h2>

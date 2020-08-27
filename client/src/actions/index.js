@@ -23,8 +23,9 @@ export const signOut = () => {
 };
 
 // CREATE Workout
-export const createWorkout = (formValues) => async (dispatch) => {
-  const response = await workouts.post('/workouts', formValues);
+export const createWorkout = (formValues) => async (dispatch, getState) => {
+  const { userId } = getState().auth
+  const response = await workouts.post('/workouts', {...formValues, userId});
 
   dispatch({
     type: CREATE_WORKOUT,

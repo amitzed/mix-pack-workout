@@ -79,6 +79,14 @@
       "exercise1Sets": "3",
       "exercise1Reps": "2",
       "id": 9
+    },
+    {
+      "day": "Monday",
+      "exercise1Title": "Overhead Press",
+      "exercise1Sets": "4",
+      "exercise1Reps": "7",
+      "userId": "103769476507895371726",
+      "id": 10
     }
   ]
 }
