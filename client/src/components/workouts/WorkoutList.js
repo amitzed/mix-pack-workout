@@ -143,7 +143,10 @@ class WorkoutList extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  return {workouts: Object.values(state.workouts)};
+  return {
+    workouts: Object.values(state.workouts),
+    currentUserId: state.auth.userId
+  };
 }
 
 export default connect(
