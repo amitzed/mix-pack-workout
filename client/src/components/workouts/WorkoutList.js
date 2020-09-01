@@ -8,6 +8,24 @@ class WorkoutList extends React.Component {
     this.props.fetchWorkouts();
   }
 
+  renderAdmin(workout) {
+    if(workout.userId === this.props.currentUserId) {
+      return (
+        <div className="" style={{margin: '1em'}}>
+          <div className="two ui buttons">
+            <button className="ui icon button blue">
+              <i className="icon pencil alternate" />
+            </button>
+            <div class="or"></div>
+            <button className="circular ui icon button red">
+              <i className="icon trash alternate outline" />
+            </button>
+          </div>
+        </div>
+      )
+    }
+  }
+
   renderList() {
     return this.props.workouts.map(workout => {
       return (
@@ -120,7 +138,7 @@ class WorkoutList extends React.Component {
 
               </div>
             </div>
-
+            {this.renderAdmin(workout)}
           </div>
         </div>
       )
