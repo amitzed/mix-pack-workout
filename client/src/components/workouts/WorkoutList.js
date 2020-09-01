@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import { fetchWorkouts } from '../../actions';
 
@@ -16,11 +17,26 @@ class WorkoutList extends React.Component {
             <button className="ui icon button blue">
               <i className="icon pencil alternate" />
             </button>
-            <div class="or"></div>
+            <div className="or"></div>
             <button className="circular ui icon button red">
               <i className="icon trash alternate outline" />
             </button>
           </div>
+        </div>
+      )
+    }
+  }
+
+  renderCreate() {
+    if(this.props.isSignedIn) {
+      return (
+        <div className="create-btn">
+          <Link to="/workouts/new" className="ui button brown tiny">
+            <div className="center aligned">
+              <i className="middle aligned icon plus circle" />
+              <p>Create New Workout</p>
+            </div>
+          </Link>
         </div>
       )
     }
@@ -149,9 +165,11 @@ class WorkoutList extends React.Component {
     return (
       <div>
         <h2 className="ui center aligned icon header medium">
-          <i className="circular green eye dropper icon"></i>
-          WorkoutList
+          <i className="circular green eye dropper icon" />
+          Your Workouts
+          {this.renderCreate()}
         </h2>
+
         <div className="ui stackable four column grid">
           {this.renderList()}
         </div>
@@ -163,7 +181,8 @@ class WorkoutList extends React.Component {
 const mapStateToProps = (state) => {
   return {
     workouts: Object.values(state.workouts),
-    currentUserId: state.auth.userId
+    currentUserId: state.auth.userId,
+    isSignedIn: state.auth.isSignedIn
   };
 }
 

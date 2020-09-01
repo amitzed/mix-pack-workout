@@ -1,1 +1,12 @@
+.ui.buttons {
+  .or:before {
+    content: 'or';
+    background-color: $whiteoff;
+    color: rgba(71, 133, 89, 0.6);
+  }
+}
 
+.create-btn {
+  text-align: center;
+  margin: 1em;
+}
