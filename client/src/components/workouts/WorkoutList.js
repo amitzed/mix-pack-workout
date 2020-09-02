@@ -33,8 +33,8 @@ class WorkoutList extends React.Component {
         <div className="create-btn">
           <Link to="/workouts/new" className="ui button brown tiny">
             <div className="center aligned">
-              <i className="middle aligned icon plus circle" />
-              <p>Create New Workout</p>
+              <i className="middle aligned icon tint" />
+              <p>Add New Workout</p>
             </div>
           </Link>
         </div>

@@ -68,7 +68,7 @@ export const deleteWorkout = (id) => async (dispatch) => {
   await workouts.delete(`/workouts/${id}`);
 
   dispatch({
-    type: EDIT_WORKOUT,
+    type: DELETE_WORKOUT,
     payload: id
   })
 }
