@@ -1,4 +1,7 @@
 import workouts from '../apis/workouts';
+
+import history from '../history';
+
 import {
   SIGN_IN,
   SIGN_OUT,
@@ -30,7 +33,8 @@ export const createWorkout = (formValues) => async (dispatch, getState) => {
   dispatch({
     type: CREATE_WORKOUT,
     payload: response.data
-  })
+  });
+  history.push('/');
 }
 
 // Fetch all workouts
