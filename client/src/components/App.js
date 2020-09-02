@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 
 import WorkoutList from './workouts/WorkoutList';
 import WorkoutCreate from './workouts/WorkoutCreate';
@@ -9,10 +9,12 @@ import WorkoutShow from './workouts/WorkoutShow';
 import Header from './Header';
 import Footer from './Footer';
 
+import history from '../history';
+
 const App = () => {
   return (
     <div className="ui container">
-      <BrowserRouter>
+      <Router history={history}>
         <Header />
         <Route path="/" exact component={WorkoutList} />
         <Route path="/workouts/new" exact component={WorkoutCreate} />
@@ -20,7 +22,7 @@ const App = () => {
         <Route path="/workouts/delete" exact component={WorkoutDelete} />
         <Route path="/workouts/show" exact component={WorkoutShow} />
         <Footer />
-      </BrowserRouter>
+      </Router>
     </div>
   )
 };
