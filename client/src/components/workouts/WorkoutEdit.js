@@ -1,6 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-const WorkoutEdit = () => {
+const WorkoutEdit = (props) => {
+  console.log(props);
   return (
     <div>
       WorkoutEdit
@@ -8,4 +10,11 @@ const WorkoutEdit = () => {
   );
 }
 
-export default WorkoutEdit;
+const mapStateToProps = (state, ownProps) => {
+
+  return { workout: state.workouts[ownProps.match.params.id] };
+};
+
+export default connect(
+  mapStateToProps
+)(WorkoutEdit);
