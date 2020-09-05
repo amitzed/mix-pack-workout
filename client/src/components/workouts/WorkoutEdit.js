@@ -1,13 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const WorkoutEdit = (props) => {
-  console.log(props);
-  return (
-    <div>
-      WorkoutEdit
-    </div>
-  );
+class WorkoutEdit extends React.Component {
+  render() {
+    return (
+      <div>
+        WorkoutEdit
+      </div>
+    );
+  }
 }
 
 const mapStateToProps = (state, ownProps) => {
