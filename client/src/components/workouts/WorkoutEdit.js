@@ -25,7 +25,7 @@ class WorkoutEdit extends React.Component {
           Edit Workout Details
         </h2>
 
-        <WorkoutForm onSubmit={this.onSubmit} />
+        <WorkoutForm initialValues={this.props.workout} onSubmit={this.onSubmit} />
       </div>
     );
   }
