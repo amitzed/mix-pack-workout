@@ -85,6 +85,14 @@
       "exercise1Reps": "2",
       "userId": "103769476507895371726",
       "id": 9
+    },
+    {
+      "day": "Wednesday",
+      "exercise1Title": "Leg Press",
+      "exercise1Sets": "3",
+      "exercise1Reps": "5",
+      "userId": "103769476507895371726",
+      "id": 10
     }
   ]
 }
