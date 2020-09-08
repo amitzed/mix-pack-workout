@@ -64,7 +64,8 @@ export const editWorkout = (id, formValues) => async (dispatch) => {
   dispatch({
     type: EDIT_WORKOUT,
     payload: response.data
-  })
+  });
+  history.push('/');
 }
 
 // DELETE workout

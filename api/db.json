@@ -18,7 +18,7 @@
     },
     {
       "day": "Wednesday",
-      "exercise1Title": "Squat",
+      "exercise1Title": "Reverse Squat",
       "exercise1Sets": "5",
       "exercise1Reps": "4",
       "exercise2Title": "Overhead Press",
@@ -29,7 +29,6 @@
       "exercise3Reps": "5",
       "cardioType": "Lateral Machine",
       "cardioTime": "20",
-      "userId": "103769476507895371726",
       "id": 3
     },
     {

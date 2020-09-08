@@ -11,7 +11,7 @@ class WorkoutEdit extends React.Component {
   }
 
   onSubmit = (formValues) => {
-    console.log(formValues);
+    this.props.editWorkout(this.props.match.params.id, formValues);
   };
 
   render() {
