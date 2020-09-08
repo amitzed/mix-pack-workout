@@ -59,7 +59,7 @@ export const fetchWorkout = (id) => async (dispatch) => {
 
 // EDIT workout
 export const editWorkout = (id, formValues) => async (dispatch) => {
-  const response = await workouts.put(`/workouts/${id}`, formValues);
+  const response = await workouts.patch(`/workouts/${id}`, formValues);
 
   dispatch({
     type: EDIT_WORKOUT,
