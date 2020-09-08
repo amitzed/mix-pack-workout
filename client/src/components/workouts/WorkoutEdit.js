@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
 
@@ -25,7 +26,23 @@ class WorkoutEdit extends React.Component {
           Edit Workout Details
         </h2>
 
-        <WorkoutForm initialValues={this.props.workout} onSubmit={this.onSubmit} />
+        <WorkoutForm
+          initialValues={_.pick(
+            this.props.workout,
+            'day',
+            'exercise1Title',
+            'exercise1Sets',
+            'exercise1Reps',
+            'exercise2Title',
+            'exercise2Sets',
+            'exercise2Reps',
+            'exercise3Title',
+            'exercise3Sets',
+            'exercise3Reps',
+            'cardioType',
+            'cardioTime'
+          )}
+          onSubmit={this.onSubmit} />
       </div>
     );
   }
