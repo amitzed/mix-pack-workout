@@ -12,7 +12,9 @@ const DimmerModal = (props) => {
         <div className="content">
           <p>{props.content}</p>
         </div>
-        {props.actions}
+        <div className="actions">
+          {props.actions}
+        </div>
 
       </div>
     </div>,

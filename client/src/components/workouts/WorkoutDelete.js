@@ -4,10 +4,10 @@ import DimmerModal from '../DimmerModal';
 
 const WorkoutDelete = () => {
   const actions = (
-    <div className="actions">
+    <React.Fragment>
       <div className="ui inverted blue button">Cancel</div>
       <div className="ui negative button">Delete</div>
-    </div>
+    </React.Fragment>
   );
 
   return (
