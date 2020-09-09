@@ -8,19 +8,16 @@ const DimmerModal = (props) => {
     <div className="ui dimmer modals visible active" onClick={() => history.push('/')}>
       <div className="ui standard modal visible active" onClick={(e) => e.stopPropagation()}>
 
-        <div className="header">Delete This Workout</div>
+        <div className="header">{props.title}</div>
         <div className="content">
-          <p>This action is permanent, are you sure?</p>
+          <p>{props.content}</p>
         </div>
-        <div className="actions">
-          <div className="ui inverted blue button">Cancel</div>
-          <div className="ui negative button">Delete</div>
-        </div>
+        {props.actions}
 
       </div>
     </div>,
 
-    document.querySelector('#delete-popup')
+    document.querySelector('#dimmer-modal')
   );
 };
 
