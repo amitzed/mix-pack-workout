@@ -10,8 +10,11 @@ const Header = () => {
         Mix Pack Workout
       </Link>
       <div className="right menu">
-        <Link to="/" className="item">
-          Workout Plan
+        <Link to="/workouts/stopwatch" className="item link">
+          <button className="ui inverted blue button">
+            <i className="stopwatch icon"></i>
+            Stopwatch
+          </button>
         </Link>
         <GoogleAuth />
       </div>
