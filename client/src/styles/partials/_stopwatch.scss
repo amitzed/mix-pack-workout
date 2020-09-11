@@ -1,58 +1,71 @@
-.stopwatch-app {
-  background-color: $purpleBaseline;
-  box-shadow: 0 3px 6px rgb(12, 12, 12);
-  box-sizing: border-box;
-  border: 2px solid $greenTreeline;
-  border-radius: 4px;
-  color: $whiteoff;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  text-align: center;
-  margin: 0 auto;
-  padding: 20px;
-  width: 50%;
-
-  .stopwatch-header {
-    font-size: 2.5em;
-    font-weight: bold;
+.stopwatch-app-container {
+  h5 {
+    color: $whiteoff;
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+    // padding: 2.5em;
   }
 
-  button {
-    background-color: #202b33;
-    border: solid 1px transparent;
-    border-radius: 5%;
-    padding: 10px 20px;
-    color: #ffffff;
-    font-size: 1.15em;
-    margin: 0 5px;
-    cursor: pointer;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
+  .stopwatch-app {
+    background-color: $purpleBaseline;
+    box-shadow: 0 3px 6px rgb(12, 12, 12);
+    box-sizing: border-box;
+    border: 2px solid $greenTreeline;
+    border-radius: 4px;
+    color: $whiteoff;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align: center;
+    margin: 8em auto 30em auto;
+    padding: 20px;
+    width: 50%;
 
-  button:hover {
-    background-color: $bluewater;
-  }
+    .stopwatch-header {
+      font-size: 2.5em;
+      font-weight: bold;
+    }
 
-  .stopwatch-app button {
-    padding: 12px 32px;
-    font-size: 1.5em;
-  }
+    button {
+      background-color: #202b33;
+      border: solid 1px transparent;
+      border-radius: 5%;
+      padding: 10px 20px;
+      color: #ffffff;
+      font-size: 1.15em;
+      margin: 0 5px;
+      cursor: pointer;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
 
-  .stopwatch-display {
-    padding: 40px 0;
-    font-size: 4em;
-  }
+    button:hover {
+      background-color: $bluewater;
+    }
 
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+    .stopwatch-app button {
+      padding: 12px 32px;
+      font-size: 1.5em;
+    }
 
-  @media (max-width: 768px) {
-    .stopwatch-app {
-      margin-bottom: 40px;
+    .stopwatch-display {
+      padding: 40px 0;
+      font-size: 4em;
+    }
+
+    @media (max-width: 1024px) {
+      margin: 5em auto 55em auto;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 4em auto 27em auto;
+    }
+
+    @media (max-width: 560px) {
+      margin: 3em auto 10em auto;
     }
   }
 }
