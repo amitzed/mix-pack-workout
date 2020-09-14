@@ -18,9 +18,9 @@ class WorkoutList extends React.Component {
               <i className="icon pencil alternate" />
             </Link>
             <div className="or"></div>
-            <button className="circular ui icon button red">
+            <Link to={`workouts/delete/${workout.id}`} className="circular ui icon button red">
               <i className="icon trash alternate outline" />
-            </button>
+            </Link>
           </div>
         </div>
       )

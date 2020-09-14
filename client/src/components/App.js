@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/" exact component={WorkoutList} />
         <Route path="/workouts/new" exact component={WorkoutCreate} />
         <Route path="/workouts/edit/:id" exact component={WorkoutEdit} />
-        <Route path="/workouts/delete" exact component={WorkoutDelete} />
+        <Route path="/workouts/delete/:id" exact component={WorkoutDelete} />
         <Route path="/workouts/show" exact component={WorkoutShow} />
         <Route path="/workouts/stopwatch" exact component={Stopwatch} />
         <Footer />
