@@ -1,6 +1,7 @@
 import React from 'react';
 
 import DimmerModal from '../DimmerModal';
+import history from '../../history';
 
 const WorkoutDelete = () => {
   const actions = (
@@ -16,6 +17,7 @@ const WorkoutDelete = () => {
         title="Delete This Workout"
         content="This action is permanent, are you sure?"
         actions={actions}
+        modalDismiss={() => history.push('/')}
       />
     </div>
   );
