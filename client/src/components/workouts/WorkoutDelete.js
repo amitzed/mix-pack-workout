@@ -19,21 +19,30 @@ class WorkoutDelete extends React.Component {
     );
   }
 
+  renderDeleteContent() {
+    if(!this.props.workout) {
+      return 'This action is permanent, are you sure?'
+    }
+    return `This action is permanent, are you sure you want to delete the workout that occurs on this day/date: ${this.props.workout.day}?`
+  }
+
   render() {
     return (
-      <div>
-        <DimmerModal
-          title="Delete This Workout"
-          content="This action is permanent, are you sure?"
-          actions={this.renderActions()}
-          modalDismiss={() => history.push('/')}
-        />
-      </div>
+      <DimmerModal
+        title="Delete This Workout"
+        content={this.renderDeleteContent()}
+        actions={this.renderActions()}
+        modalDismiss={() => history.push('/')}
+      />
     );
   }
 }
 
+const mapStateToProps = (state, ownProps) => {
+  return { workout: state.workouts[ownProps.match.params.id]}
+};
+
 export default connect(
-  null,
+  mapStateToProps,
   { fetchWorkout }
 )(WorkoutDelete);
