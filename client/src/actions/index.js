@@ -75,5 +75,6 @@ export const deleteWorkout = (id) => async (dispatch) => {
   dispatch({
     type: DELETE_WORKOUT,
     payload: id
-  })
+  });
+  history.push('/');
 }

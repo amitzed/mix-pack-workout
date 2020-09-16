@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import DimmerModal from '../DimmerModal';
 import history from '../../history';
-import { fetchWorkout } from '../../actions';
+import { fetchWorkout, deleteWorkout } from '../../actions';
 
 class WorkoutDelete extends React.Component {
   componentDidMount() {
@@ -12,10 +12,12 @@ class WorkoutDelete extends React.Component {
   }
 
   renderActions() {
+    const { id } = this.props.match.params;
+
     return (
       <React.Fragment>
         <Link to="/" className="ui inverted blue button">Cancel</Link>
-        <div className="ui negative button">Delete</div>
+        <div onClick={() => this.props.deleteWorkout(id)} className="ui negative button">Delete</div>
       </React.Fragment>
     );
   }
@@ -45,5 +47,5 @@ const mapStateToProps = (state, ownProps) => {
 
 export default connect(
   mapStateToProps,
-  { fetchWorkout }
+  { fetchWorkout, deleteWorkout }
 )(WorkoutDelete);
