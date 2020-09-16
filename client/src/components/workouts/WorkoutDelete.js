@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import DimmerModal from '../DimmerModal';
 import history from '../../history';
@@ -13,7 +14,7 @@ class WorkoutDelete extends React.Component {
   renderActions() {
     return (
       <React.Fragment>
-        <div className="ui inverted blue button">Cancel</div>
+        <Link to="/" className="ui inverted blue button">Cancel</Link>
         <div className="ui negative button">Delete</div>
       </React.Fragment>
     );
