@@ -48,10 +48,12 @@ class WorkoutList extends React.Component {
         <div className="ui two column centered" key={workout.id}>
           <div className="ui segments">
 
-            <div className="ui inverted brown center aligned segment" style={{margin: '1em'}}>
-              <i className="large middle aligned icon calendar alternate outline" />
-              <p>{workout.day}</p>
-            </div>
+            <Link to={`/workouts/${workout.id}`}>
+              <div className="ui inverted brown center aligned segment" style={{margin: '1em'}}>
+                <i className="large middle aligned icon calendar alternate outline" />
+                <p>{workout.day}</p>
+              </div>
+            </Link>
 
             <div className="ui segments">
               <div className="ui inverted center aligned segment">

@@ -11,6 +11,7 @@ const Footer = () => {
 
         <div className="ui centered grid">
           <div className="doubling four column row link-wrapper">
+
             <div className="ui inverted brown center aligned segment link-item" style={{margin: '1em'}}>
               <a href="https://stronglifts.com/squat/" target="_blank" rel="noopener noreferrer">
                 <i className="large middle aligned icon video" />
