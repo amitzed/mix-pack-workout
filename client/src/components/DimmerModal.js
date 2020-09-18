@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import history from '../history';
-
 const DimmerModal = (props) => {
   return ReactDOM.createPortal(
     <div className="ui dimmer modals visible active" onClick={props.modalDismiss}>

@@ -1,0 +1,15 @@
+.show-wrapper {
+  height: 70vh;
+
+  @media (max-width: 768px) {
+    height: 60vh;
+  }
+
+  @media (max-width: 414px) {
+    height: 80vh;
+  }
+
+  @media (max-width: 320px) {
+    height: 100vh;
+  }
+}
