@@ -45,19 +45,21 @@ class WorkoutList extends React.Component {
   renderList() {
     return this.props.workouts.map(workout => {
       return (
-        <div className="ui two column centered" key={workout.id}>
+        <div className="ui two column centered workout-list-wrapper" key={workout.id}>
           <div className="ui segments">
 
             <Link to={`/workouts/${workout.id}`}>
               <div className="ui inverted brown center aligned segment" style={{margin: '1em'}}>
-                <i className="large middle aligned icon calendar alternate outline" />
+                <i className="large middle aligned icon calendar alternate outline day-icon" />
                 <p>{workout.day}</p>
               </div>
             </Link>
 
             <div className="ui segments">
               <div className="ui inverted center aligned segment">
-                <i className="large circular green flask icon"></i>
+                <Link to={`/workouts/${workout.id}`}>
+                  <i className="large circular green flask icon flask-icon"></i>
+                </Link>
                 <p>
                   {
                     !workout.exercise1Title
