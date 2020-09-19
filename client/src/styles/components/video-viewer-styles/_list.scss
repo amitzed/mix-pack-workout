@@ -1,0 +1,16 @@
+.workout-video-item-component-container {
+  background: transparent;
+  border: none;
+  position: relative;
+  max-height: 60em;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+
+  @media(max-width: 768px) {
+    max-height: 40em;
+  }
+}

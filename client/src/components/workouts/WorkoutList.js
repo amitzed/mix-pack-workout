@@ -31,9 +31,9 @@ class WorkoutList extends React.Component {
     if(this.props.isSignedIn) {
       return (
         <div className="create-btn">
-          <Link to="/workouts/new" className="ui button brown tiny">
+          <Link to="/workouts/new" className="ui button brown tiny test">
             <div className="center aligned">
-              <i className="middle aligned icon tint" />
+              <i className="middle aligned icon tint tint-icon" />
               <p>Add New Workout</p>
             </div>
           </Link>

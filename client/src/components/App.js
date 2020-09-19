@@ -6,7 +6,7 @@ import WorkoutCreate from './workouts/WorkoutCreate';
 import WorkoutEdit from './workouts/WorkoutEdit';
 import WorkoutDelete from './workouts/WorkoutDelete';
 import WorkoutShow from './workouts/WorkoutShow';
-import WorkoutVideos from './workouts/WorkoutVideos';
+import WorkoutVideos from './workouts/video-viewer/WorkoutVideos';
 import Header from './Header';
 import Footer from './Footer';
 import Stopwatch from './Stopwatch';

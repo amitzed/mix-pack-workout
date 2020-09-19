@@ -44,7 +44,7 @@ class Stopwatch extends React.Component {
       return (
 
         <div className="ui dimmer modals visible active stopwatch-app-container" onClick={() => history.push('/')}>
-          <div className="ui standard modal visible active" onClick={(e) => e.stopPropagation()} style={{background: '#4b0082'}}>
+          <div className="ui standard modal visible active stopwatch-wrapper" onClick={(e) => e.stopPropagation()}>
             <br/>
             <h5>Click Outside This Box To Return To Home Screen</h5>
             <div className="stopwatch-app">

@@ -1,0 +1,76 @@
+.workout-video-item-component {
+  background: rgba(255, 246, 133, 0.7);
+  border: 1px ridge $blueDeep;
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+  padding-bottom: 3em;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    background: $yellowPastel;
+    color: $blueDeep;
+  }
+
+  h5,
+  img {
+    cursor: pointer;
+  }
+
+  img {
+    border-radius: 2%;
+    text-align: center;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+
+    &:hover {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  }
+
+  @media(max-width: 1200px) {
+    img {
+      width: 21rem;
+    }
+  }
+
+  @media(max-width: 768px) {
+    margin-bottom: 0.5em;
+
+    .item-video-title {
+      text-align: center;
+    }
+
+    hr {
+      display: none;
+    }
+
+    .item-individual {
+      max-width: none;
+      text-align: center;
+    }
+
+    img {
+      width: 30rem;
+    }
+  }
+
+  @media(max-width: 415px) {
+    img {
+      width: 21rem;
+    }
+  }
+
+  @media(max-width: 320px) {
+    img {
+      width: 18rem;
+    }
+  }
+}

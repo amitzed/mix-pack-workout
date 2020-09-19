@@ -1,5 +1,22 @@
+.test i.tint-icon,
+i.day-icon {
+  -webkit-transition: all 0.60s ease-in-out;
+  -moz-transition: all 0.60s ease-in-out;
+  -ms-transition: all 0.60s ease-in-out;
+  -o-transition: all 0.60s ease-in-out;
+  transition: all 0.60s ease-in-out;
+
+  &:hover {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    color: $purpleBaseline;
+  }
+}
+
 .workout-list-wrapper {
-  i.day-icon,
   i.flask-icon {
     -webkit-transition: all 0.70s ease-in-out;
     -moz-transition: all 0.70s ease-in-out;
@@ -8,11 +25,11 @@
     transition: all 0.70s ease-in-out;
 
     &:hover {
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      transform: rotate(180deg);
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+      transform: rotate(-135deg);
       background: $indigo;
     }
   }
