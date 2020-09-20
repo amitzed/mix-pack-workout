@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { fetchWorkouts } from '../../actions';
 
 class WorkoutList extends React.Component {
+
   componentDidMount() {
     this.props.fetchWorkouts();
   }
