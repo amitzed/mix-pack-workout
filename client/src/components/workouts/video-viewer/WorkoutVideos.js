@@ -11,7 +11,7 @@ class WorkoutVideos extends React.Component {
   state = { videos: [], selectedVideo: null }
 
   componentDidMount() {
-    this.onTextSubmit('stronglifts 5x5')
+    this.onTextSubmit('stronglifts 5x5');
   }
 
   onTextSubmit = async (term) => {
@@ -36,25 +36,25 @@ class WorkoutVideos extends React.Component {
 
   render() {
     return (
-      <div className="workout-videos-wrapper">
+      <div className="container-lg my-2 workout-videos-wrapper">
 
-        <div className="workout-videos-inner">
-          <div className="list-container">
-            <Search />
-            <List />
+        <div className="ui grid workout-videos-inner">
+          <div className="six wide column list-container">
+            <Search onFormSubmit={this.onTextSubmit} />
+            <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
           </div>
-          <div className="video-links-container">
-            <VideoFocus />
+          <div className="ten wide column video-links-container">
+            <VideoFocus video={this.state.selectedVideo} />
           </div>
         </div>
 
-        <div className="workout-videos-inner-mobile">
-          <div className="list-container-mobile">
-            <List />
+        <div className="ui grid workout-videos-inner-mobile">
+          <div className="six wide column list-container-mobile">
+            <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
           </div>
           <div className="ten wide column video-links-container-mobile">
-            <VideoFocus />
-            <Search />
+            <VideoFocus video={this.state.selectedVideo} />
+            <Search onFormSubmit={this.onTextSubmit} />
           </div>
         </div>
 
