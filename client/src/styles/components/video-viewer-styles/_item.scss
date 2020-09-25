@@ -1,8 +1,10 @@
 .workout-video-item-component {
-  background: rgba(255, 246, 133, 0.7);
-  border: 1px ridge $blueDeep;
+  background: $purpleBaseline;
+  border: 1px ridge $indigo;
+  color: $whiteoff;
   border-radius: 5px;
   margin-bottom: 1.5em;
+  margin-right: 0.75em;
   padding-bottom: 3em;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
@@ -10,8 +12,8 @@
   transition: all 0.1s ease-in-out;
 
   &:hover {
-    background: $yellowPastel;
-    color: $blueDeep;
+    background: $indigo;
+    color: $yellowPastel;
   }
 
   h5,
@@ -43,6 +45,7 @@
 
   @media(max-width: 768px) {
     margin-bottom: 0.5em;
+    margin-right: 0;
 
     .item-video-title {
       text-align: center;

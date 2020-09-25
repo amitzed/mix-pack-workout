@@ -3,66 +3,13 @@
   border: 1px ridge $purpleBaseline;
   background: $purpleBaseline;
   color: $whiteoff;
-  -webkit-animation: colorBlend 60s infinite;
-  -moz-animation: colorBlend 60s infinite;
-  -o-animation: colorBlend 60s infinite;
-  animation: colorBlend 60s infinite;
-
-  @-webkit-keyframes colorBlend {
-    0% {
-      background: $indigo;
-    }
-    25% {
-      background: $mauve;
-    }
-    50% {
-      background: $purpleBaseline;
-    }
-    75% {
-      background: $indigo;
-    }
-    100% {
-      background: $purpleBaseline;
-    }
-  }
-
-  @-moz-keyframes colorBlend {
-    0% {
-      background: $indigo;
-    }
-    25% {
-      background: $mauve;
-    }
-    50% {
-      background: $purpleBaseline;
-    }
-    75% {
-      background: $indigo;
-    }
-    100% {
-      background: $purpleBaseline;
-    }
-  }
-
-  @keyframes colorBlend {
-    0% {
-      background: $indigo;
-    }
-    25% {
-      background: $mauve;
-    }
-    50% {
-      background: $purpleBaseline;
-    }
-    75% {
-      background: $indigo;
-    }
-    100% {
-      background: $purpleBaseline;
-    }
-  }
 
   @media(max-width: 768px) {
     margin-bottom: 1rem;
   }
+}
+
+.spinner-grow {
+  margin: 2em auto;
+  width: 100%;
 }

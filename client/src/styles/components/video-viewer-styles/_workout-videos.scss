@@ -1,4 +1,9 @@
 .workout-videos-wrapper {
+  .workout-videos-inner {
+    display: flex;
+    justify-content: center;
+  }
+
   .workout-videos-inner-mobile {
     display: none;
   }
@@ -12,7 +17,8 @@
   }
 
   @media(max-width: 768px) {
-    .workout-videos-inner {
+    .workout-videos-inner,
+    .list-container {
       display: none;
     }
 
