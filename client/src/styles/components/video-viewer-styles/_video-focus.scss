@@ -1,63 +1,64 @@
 .workout-video-focus-wrapper {
   border-radius: 5px;
-  border: 1px ridge $blueDeep;
-  background: $blueDeep;
-  -webkit-animation: colorBlend 30s infinite;
-  -moz-animation: colorBlend 30s infinite;
-  -o-animation: colorBlend 30s infinite;
-  animation: colorBlend 30s infinite;
+  border: 1px ridge $purpleBaseline;
+  background: $purpleBaseline;
+  color: $whiteoff;
+  -webkit-animation: colorBlend 60s infinite;
+  -moz-animation: colorBlend 60s infinite;
+  -o-animation: colorBlend 60s infinite;
+  animation: colorBlend 60s infinite;
 
   @-webkit-keyframes colorBlend {
     0% {
-      background: $blueDeep;
+      background: $indigo;
     }
     25% {
       background: $mauve;
     }
     50% {
-      background: $yellowPastel;
+      background: $purpleBaseline;
     }
     75% {
-      background: $blueCool;
+      background: $indigo;
     }
     100% {
-      background: $blueDeep;
+      background: $purpleBaseline;
     }
   }
 
   @-moz-keyframes colorBlend {
     0% {
-      background: $blueDeep;
+      background: $indigo;
     }
     25% {
       background: $mauve;
     }
     50% {
-      background: $yellowPastel;
+      background: $purpleBaseline;
     }
     75% {
-      background: $blueCool;
+      background: $indigo;
     }
     100% {
-      background: $blueDeep;
+      background: $purpleBaseline;
     }
   }
 
   @keyframes colorBlend {
     0% {
-      background: $blueDeep;
+      background: $indigo;
     }
     25% {
       background: $mauve;
     }
     50% {
-      background: $yellowPastel;
+      background: $purpleBaseline;
     }
     75% {
-      background: $blueCool;
+      background: $indigo;
     }
     100% {
-      background: $blueDeep;
+      background: $purpleBaseline;
     }
   }
 
