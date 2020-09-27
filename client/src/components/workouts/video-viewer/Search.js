@@ -15,9 +15,10 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div className="workout-video-search-bar">
-        <form onSubmit={this.onFormSubmit}>
-          <div className="input-group input-group-lg">
+      <div className="search-bar ui segment workout-video-search-bar">
+        <form onSubmit={this.onFormSubmit} className="ui form">
+          <div>
+            {/* <label>Search Videos</label> */}
             <input
               className="form-control"
               type="text"
@@ -28,6 +29,7 @@ class Search extends React.Component {
           </div>
         </form>
       </div>
+
     )
   }
 }

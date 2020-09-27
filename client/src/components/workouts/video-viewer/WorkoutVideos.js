@@ -36,27 +36,35 @@ class WorkoutVideos extends React.Component {
 
   render() {
     return (
-      <div className="container-lg my-2 workout-videos-wrapper">
+      <div className="ui container workout-videos-wrapper">
 
-        <div className="ui grid workout-videos-inner">
-          <div className="ten wide column video-links-container">
-            <VideoFocus video={this.state.selectedVideo} />
-          </div>
-        </div>
+        <div className="ui grid">
 
-        <div className="six wide column list-container">
-          <Search onFormSubmit={this.onTextSubmit} />
-          <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
-        </div>
+          <div className="ui row">
 
-        <div className="ui grid workout-videos-inner-mobile">
-          <div className="six wide column list-container-mobile">
-            <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+            <div className="ui grid workout-videos-inner">
+              <div className="eleven wide column video-links-container">
+                <VideoFocus video={this.state.selectedVideo} />
+              </div>
+            </div>
+
+            <div className="five wide column list-container">
+              <Search onFormSubmit={this.onTextSubmit} />
+              <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+            </div>
+
+            <div className="ui grid workout-videos-inner-mobile">
+              <div className="five wide column list-container-mobile">
+                <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+              </div>
+              <div className="ten wide column video-links-container-mobile">
+                <VideoFocus video={this.state.selectedVideo} />
+                <Search onFormSubmit={this.onTextSubmit} />
+              </div>
+            </div>
+
           </div>
-          <div className="ten wide column video-links-container-mobile">
-            <VideoFocus video={this.state.selectedVideo} />
-            <Search onFormSubmit={this.onTextSubmit} />
-          </div>
+
         </div>
 
       </div>

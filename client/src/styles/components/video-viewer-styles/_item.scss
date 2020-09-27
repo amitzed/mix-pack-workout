@@ -6,6 +6,9 @@
   margin-bottom: 1.5em;
   margin-right: 0.75em;
   padding-bottom: 3em;
+  // display: flex !important;
+  // align-items: center !important;
+  // cursor: pointer;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
@@ -14,6 +17,10 @@
   &:hover {
     background: $indigo;
     color: $yellowPastel;
+  }
+
+  .video-item.item img {
+    // max-width: 180px;
   }
 
   h5,

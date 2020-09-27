@@ -12,16 +12,17 @@ const VideoFocus = ({ video }) => {
   const videoSource = `https://www.youtube.com/embed/${video.id.videoId}`;
 
   return (
-    <div className="jumbotron workout-video-focus-wrapper" >
-      <div className="embed-responsive embed-responsive-16by9">
+    <div>
+      <div className="ui embed workout-video-focus-wrapper">
         <iframe className="embed-responsive-item" src={videoSource} title="Video Player" />
       </div>
-      <hr className="my-3" />
-      <div className="lead">
+      <hr /> 
+      <div className="ui segment">
         <h4>{video.snippet.title}</h4>
         <h6>{video.snippet.description}</h6>
       </div>
     </div>
+
   )
 }
 

@@ -8,7 +8,7 @@ const List = ( {videos, onVideoSelect} ) => {
   });
 
   return (
-    <div className="workout-video-item-component-container card mb-3">
+    <div className="workout-video-item-component-container">
       {renderedList}
     </div>
   )
