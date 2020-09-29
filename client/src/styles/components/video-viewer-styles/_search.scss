@@ -2,4 +2,10 @@
   border: 2px solid $blueDeep;
   border-radius: 5px;
   margin-bottom: 1.5em;
+
+  @media(max-width: 768px) {
+    &.ui.segment {
+      margin-bottom: 1em;
+    }
+  }
 }

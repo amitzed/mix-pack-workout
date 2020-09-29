@@ -2,6 +2,17 @@
   .workout-videos-inner {
     display: flex;
     justify-content: center;
+    width: 100%;
+  }
+
+  .workout-videos-inner .ui.segment {
+    background: $purpleBaseline;
+    color: $whiteoff;
+    text-align: center;
+
+    input {
+      background: $whiteoff;
+    }
   }
 
   .workout-videos-inner-mobile {
@@ -19,7 +30,7 @@
   @media(max-width: 768px) {
     .workout-videos-inner,
     .list-container {
-      display: none;
+      display: none !important;
     }
 
     .workout-videos-inner-mobile {
@@ -29,6 +40,12 @@
 
       .video-links-container-mobile {
         display: table-header-group !important;
+        text-align: center;
+
+        .ui.segment {
+          background: $purpleBaseline;
+          color: $whiteoff;
+        }
       }
 
       .list-container-mobile {

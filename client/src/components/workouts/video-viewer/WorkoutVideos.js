@@ -19,7 +19,7 @@ class WorkoutVideos extends React.Component {
       params: {
         q: term,
         part: "snippet",
-        maxResults: 5,
+        maxResults: 4,
         type: 'video',
         key: KEY
       }
@@ -45,12 +45,9 @@ class WorkoutVideos extends React.Component {
             <div className="ui grid workout-videos-inner">
               <div className="eleven wide column video-links-container">
                 <VideoFocus video={this.state.selectedVideo} />
+                <Search onFormSubmit={this.onTextSubmit} />
+                <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
               </div>
-            </div>
-
-            <div className="five wide column list-container">
-              <Search onFormSubmit={this.onTextSubmit} />
-              <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
             </div>
 
             <div className="ui grid workout-videos-inner-mobile">
