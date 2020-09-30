@@ -4,6 +4,7 @@ import youtube from '../../../apis/youtube.js';
 import Search from './Search';
 import List from './List';
 import VideoFocus from './VideoFocus';
+import history from '../../../history';
 
 const KEY = process.env.REACT_APP_YOUTUBE_API_KEY
 
@@ -37,9 +38,7 @@ class WorkoutVideos extends React.Component {
   render() {
     return (
       <div className="ui container workout-videos-wrapper">
-
         <div className="ui grid">
-
           <div className="ui row">
 
             <div className="ui grid workout-videos-inner">
@@ -61,9 +60,7 @@ class WorkoutVideos extends React.Component {
             </div>
 
           </div>
-
         </div>
-
       </div>
     )
   }
