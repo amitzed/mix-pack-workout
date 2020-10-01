@@ -4,7 +4,6 @@ import youtube from '../../../apis/youtube.js';
 import Search from './Search';
 import List from './List';
 import VideoFocus from './VideoFocus';
-import history from '../../../history';
 
 const KEY = process.env.REACT_APP_YOUTUBE_API_KEY
 

@@ -4,6 +4,8 @@ const Bench = () => {
   return (
     <div className="instructions">
       Bench
+      <iframe src="https://stronglifts.com/bench-press/" title="bench"></iframe>
+
     </div>
   )
 }
