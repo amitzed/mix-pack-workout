@@ -1,0 +1,34 @@
+.notfound-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .ban-icon {
+    animation: spin-icon infinite 20s linear;
+  }
+
+  .notfound-404 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10rem;
+    color: $purpleBaseline;
+    margin: 0.5em auto;
+
+    span {
+      text-shadow: -6px 0 0 $bluewater;
+    }
+  }
+
+  .home-btn {
+    margin-top: 1.5rem;
+  }
+
+  @keyframes spin-icon {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

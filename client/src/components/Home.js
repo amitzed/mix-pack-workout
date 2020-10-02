@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, Router, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 
 import WorkoutList from './workouts/WorkoutList';
 import WorkoutCreate from './workouts/WorkoutCreate';
@@ -15,11 +15,10 @@ import Squat from './workouts/instructions/squat';
 import Header from './Header';
 import Footer from './Footer';
 import Stopwatch from './Stopwatch';
-import NotFound from './NotFound';
 
 import history from '../history';
 
-const App = () => {
+const Home = () => {
   return (
     <div className="ui container">
       <Router history={history}>
@@ -36,8 +35,6 @@ const App = () => {
           <Route path="/workouts/overhead" exact component={Overhead} />
           <Route path="/workouts/row" exact component={Row} />
           <Route path="/workouts/squat" exact component={Squat} />
-          <Route path="/404" component={NotFound} />
-          <Redirect to="/404" />
           <Route path="/workouts/:id" exact component={WorkoutShow} />
         </Switch>
         <Footer />
@@ -46,4 +43,4 @@ const App = () => {
   )
 };
 
-export default App;
+export default Home;
