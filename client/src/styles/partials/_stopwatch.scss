@@ -6,7 +6,7 @@
   }
 
   .stopwatch-wrapper {
-    background: #161748;
+    background: #2c3531;
     border-radius: 10px;
     -webkit-animation: colorBlend 90s infinite;
     -moz-animation: colorBlend 90s infinite;
@@ -16,63 +16,63 @@
 
   @-webkit-keyframes colorBlend {
     0% {
-      background: $blueDeep;
+      background: $future1;
     }
     25% {
-      background: $indigo;
+      background: $future2;
     }
     50% {
-      background: $purpleBaseline;
+      background: $future3;
     }
     75% {
-      background: $whiteoff;
+      background: $future5;
     }
     100% {
-      background: $blueDeep;
+      background: $future1;
     }
   }
 
   @-moz-keyframes colorBlend {
     0% {
-      background: $blueDeep;
+      background: $future1;
     }
     25% {
-      background: $indigo;
+      background: $future2;
     }
     50% {
-      background: $purpleBaseline;
+      background: $future3;
     }
     75% {
-      background: $whiteoff;
+      background: $future5;
     }
     100% {
-      background: $blueDeep;
+      background: $future1;
     }
   }
 
   @keyframes colorBlend {
     0% {
-      background: $blueDeep;
+      background: $future1;
     }
     25% {
-      background: $indigo;
+      background: $future2;
     }
     50% {
-      background: $purpleBaseline;
+      background: $future3;
     }
     75% {
-      background: $whiteoff;
+      background: $future5;
     }
     100% {
-      background: $blueDeep;
+      background: $future1;
     }
   }
 
   .stopwatch-app {
-    background: $purpleBaseline;
+    background: $future1;
     box-shadow: 0 3px 6px rgb(12, 12, 12);
     box-sizing: border-box;
-    border: 2px solid $greenTreeline;
+    border: 2px solid $future4;
     border-radius: 50px;
     color: $whiteoff;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -91,7 +91,7 @@
       border: solid 1px transparent;
       border-radius: 5%;
       padding: 10px 20px;
-      color: #ffffff;
+      color: #fff;
       font-size: 1.15em;
       margin: 0 5px;
       cursor: pointer;
@@ -103,7 +103,8 @@
     }
 
     button:hover {
-      background-color: $bluewater;
+      color: $future1;
+      background-color: $future5;
     }
 
     .stopwatch-app button {

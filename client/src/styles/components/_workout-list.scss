@@ -1,36 +1,81 @@
-.test i.tint-icon,
-i.day-icon {
-  -webkit-transition: all 0.60s ease-in-out;
-  -moz-transition: all 0.60s ease-in-out;
-  -ms-transition: all 0.60s ease-in-out;
-  -o-transition: all 0.60s ease-in-out;
-  transition: all 0.60s ease-in-out;
-
-  &:hover {
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    transform: rotate(135deg);
-    color: $purpleBaseline;
+.workout-list-parent {
+  .dropper-icon {
+    animation: spin-icon 1 30s linear;
   }
-}
 
-.workout-list-wrapper {
-  i.flask-icon {
-    -webkit-transition: all 0.70s ease-in-out;
-    -moz-transition: all 0.70s ease-in-out;
-    -ms-transition: all 0.70s ease-in-out;
-    -o-transition: all 0.70s ease-in-out;
-    transition: all 0.70s ease-in-out;
+  h2.ui.header {
+    color: $future5;
+  }
+
+  .tint-icon-wrapper {
+    background: $future2;
+    color: $future4;
+  }
+
+  .test i.tint-icon,
+  i.day-icon {
+    -webkit-transition: all 0.60s ease-in-out;
+    -moz-transition: all 0.60s ease-in-out;
+    -ms-transition: all 0.60s ease-in-out;
+    -o-transition: all 0.60s ease-in-out;
+    transition: all 0.60s ease-in-out;
 
     &:hover {
-      -webkit-transform: rotate(-135deg);
-      -moz-transform: rotate(-135deg);
-      -o-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-      transform: rotate(-135deg);
-      background: $indigo;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      transform: rotate(135deg);
+      color: $future2;
     }
+  }
+
+  .workout-list-wrapper {
+    .calendar-icon-wrapper {
+      color: $future1;
+      background: $future3;
+    }
+
+    .data-wrapper {
+      .ui.inverted.segment {
+        background: $future2;
+      }
+
+      .ui.secondary.inverted.segment {
+        background: $future3;
+        color: $future1;
+      }
+
+      .ui.tertiary.inverted.segment {
+        background: $future4;
+        color: $future1;
+      }
+    }
+
+    i.flask-icon {
+      -webkit-transition: all 0.70s ease-in-out;
+      -moz-transition: all 0.70s ease-in-out;
+      -ms-transition: all 0.70s ease-in-out;
+      -o-transition: all 0.70s ease-in-out;
+      transition: all 0.70s ease-in-out;
+
+      &:hover {
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        background: $future2;
+      }
+    }
+
+    .pencil-icon-wrapper {
+      color: $future1;
+      background: $future5;
+    }
+  }
+
+  .ui.segments {
+    border: 1px solid rgba(255, 203, 154, 0.07);
   }
 }

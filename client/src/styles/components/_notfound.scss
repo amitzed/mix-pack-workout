@@ -5,30 +5,32 @@
   align-items: center;
 
   .ban-icon {
+    color: $future2;
     animation: spin-icon infinite 20s linear;
+  }
+
+  .content {
+    color: $future3;
   }
 
   .notfound-404 {
     font-family: 'Montserrat', sans-serif;
     font-size: 10rem;
-    color: $purpleBaseline;
+    color: $future2;
     margin: 0.5em auto;
 
     span {
-      text-shadow: -6px 0 0 $bluewater;
+      text-shadow: -6px 0 0 $future3;
     }
+  }
+
+  .sub span {
+    color: $future3;
   }
 
   .home-btn {
     margin-top: 1.5rem;
-  }
-
-  @keyframes spin-icon {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+    color: $future5;
+    background: $future2;
   }
 }

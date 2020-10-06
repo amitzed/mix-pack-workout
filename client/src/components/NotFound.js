@@ -13,9 +13,9 @@ const NotFound = () => {
             <span>4</span><span>0</span><span>4</span>
           </div>
 
-          <div className="sub header">We're sorry, but the page you requested was not found.</div>
+          <div className="sub header"><span>We're sorry, but the page you requested was not found.</span></div>
           <Link to="/">
-            <button className="ui green button big home-btn">
+            <button className="ui button big home-btn">
               Go To Homepage
             </button>
           </Link>

@@ -1,7 +1,7 @@
 .workout-video-item-component {
   text-align: center;
-  background: $purpleBaseline;
-  border: 1px ridge $indigo;
+  background: $future2;
+  border: 1px ridge $future1;
   color: $whiteoff;
   border-radius: 5px;
   margin-right: 0.5em;
@@ -13,8 +13,8 @@
   transition: all 0.1s ease-in-out;
 
   &:hover {
-    background: $indigo;
-    color: $yellowPastel;
+    background: $future5;
+    color: $future1;
   }
 
   .ui.image {
@@ -68,12 +68,6 @@
 
     img {
       width: 100%;
-    }
-  }
-
-  @media(max-width: 415px) {
-    img {
-      // width: 100%;
     }
   }
 

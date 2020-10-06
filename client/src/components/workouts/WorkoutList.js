@@ -15,7 +15,7 @@ class WorkoutList extends React.Component {
       return (
         <div className="" style={{margin: '1em'}}>
           <div className="two ui buttons">
-            <Link to={`/workouts/edit/${workout.id}`} className="ui icon button blue">
+            <Link to={`/workouts/edit/${workout.id}`} className="ui icon button blue pencil-icon-wrapper">
               <i className="icon pencil alternate" />
             </Link>
             <div className="or"></div>
@@ -32,7 +32,7 @@ class WorkoutList extends React.Component {
     if(this.props.isSignedIn) {
       return (
         <div className="create-btn">
-          <Link to="/workouts/new" className="ui button brown tiny test">
+          <Link to="/workouts/new" className="ui button tiny test tint-icon-wrapper">
             <div className="center aligned">
               <i className="middle aligned icon tint tint-icon" />
               <p>Add New Workout</p>
@@ -50,13 +50,13 @@ class WorkoutList extends React.Component {
           <div className="ui segments">
 
             <Link to={`/workouts/${workout.id}`}>
-              <div className="ui inverted brown center aligned segment" style={{margin: '1em'}}>
+              <div className="ui inverted center aligned segment calendar-icon-wrapper" style={{margin: '1em'}}>
                 <i className="large middle aligned icon calendar alternate outline day-icon" />
                 <p>{workout.day}</p>
               </div>
             </Link>
 
-            <div className="ui segments">
+            <div className="ui segments data-wrapper">
               <div className="ui inverted center aligned segment">
                 <Link to={`/workouts/${workout.id}`}>
                   <i className="large circular green flask icon flask-icon"></i>
@@ -168,9 +168,9 @@ class WorkoutList extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="workout-list-parent">
         <h2 className="ui center aligned icon header medium">
-          <i className="circular green eye dropper icon" />
+          <i className="circular green eye dropper icon dropper-icon" />
           Your Workouts
           {this.renderCreate()}
         </h2>

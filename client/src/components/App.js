@@ -36,9 +36,9 @@ const App = () => {
           <Route path="/workouts/overhead" exact component={Overhead} />
           <Route path="/workouts/row" exact component={Row} />
           <Route path="/workouts/squat" exact component={Squat} />
+          <Route path="/workouts/:id" exact component={WorkoutShow} />
           <Route path="/404" component={NotFound} />
           <Redirect to="/404" />
-          <Route path="/workouts/:id" exact component={WorkoutShow} />
         </Switch>
         <Footer />
       </Router>

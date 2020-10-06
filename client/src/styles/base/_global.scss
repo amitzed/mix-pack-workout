@@ -1,5 +1,3 @@
-$greenTreeline  : #478559;
-$purpleBaseline : #161748;
 $pinkHighlight  : #f95d9b;
 $bluewater      : #39a0ca;
 $whiteoff       : #fffaf0;
@@ -10,11 +8,26 @@ $yellowPastel: #FFF685; /* rgb(255, 246, 133) */
 $blueCool: #00DDFF; /* rgb(0, 221, 255) */
 $blueDeep: #0049b7; /* rgb(0, 73, 183) */
 
+$future1        : #2c3531;
+$future2        : #116466;
+$future3        : #d9b08c;
+$future4        : #ffcb9a;
+$future5        : #d1e8e2;
+
 html {
   scroll-behavior: smooth;
   height: 100%;
 }
 
 body {
-  background: $greenTreeline;
+  background: $future1;
+}
+
+@keyframes spin-icon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
