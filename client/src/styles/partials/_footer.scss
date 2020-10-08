@@ -4,35 +4,29 @@
 
   .footer-wrapper {
     padding: 1.5em;
-    background: $future2;
+    // background: $future2;
+    background: rgba(17, 100, 102, 0.8);
+
+    span {
+      color: $future5;
+    }
   }
 
   .link-wrapper {
     margin-top: 1.5em;
   }
 
-  .link-item {
-    -webkit-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+  .ui.inverted.segment {
+    background: $future1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
 
-    &:hover {
-      -webkit-transform: scale(1.1);
-      -o-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-
-    a,
-    i {
-      color: $whiteoff;
-
-      &:hover {
-        color: $indigo;
-      }
-    }
+  .ui.inverted.segment:hover {
+    background: $future3;
+    color: $future1;
   }
 }

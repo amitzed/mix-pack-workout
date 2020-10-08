@@ -18,11 +18,10 @@ class Search extends React.Component {
       <div className="search-bar ui segment workout-video-search-bar">
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div>
-            {/* <label>Search Videos</label> */}
             <input
               className="form-control"
               type="text"
-              placeholder="&#128269; &nbsp;search &amp; scroll below"
+              placeholder="&#128269; &nbsp;Search & scroll below"
               value={this.state.term}
               onChange={this.onInputChange}
             />

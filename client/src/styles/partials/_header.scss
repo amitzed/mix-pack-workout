@@ -1,0 +1,39 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem !important;
+  padding-bottom: 1rem;
+
+  .ui.inverted.button {
+    background: $future2;
+    color: $whiteoff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: $future4;
+      color: $future1;
+    }
+  }
+}
+
+.ui.secondary.pointing.menu.header-container {
+  border-bottom: 2px solid rgba(209, 232, 226, 0.15);
+}
+
+.ui.secondary.pointing.menu a.item.header-app-title {
+  color: $future4;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.ui.secondary.pointing.menu a.item.header-app-title:hover {
+  color: $future5;
+}

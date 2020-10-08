@@ -5,17 +5,17 @@ import GoogleAuth from './GoogleAuth';
 
 const Header = () => {
   return (
-    <div className="ui secondary pointing menu">
-      <Link to="/" className="item">
+    <div className="ui secondary pointing menu header-container">
+      <Link to="/" className="item header-app-title">
         Mix Pack Workout
       </Link>
       <Link to="/workouts/stopwatch" className="item link">
-        <button className="ui inverted blue button">
+        <button className="ui inverted blue button stopwatch-button">
           <i className="stopwatch icon"></i>
           Stopwatch
         </button>
       </Link>
-      <div className="right menu">
+      <div className="right menu item link">
         <GoogleAuth />
       </div>
     </div>
