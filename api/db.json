@@ -41,13 +41,6 @@
       "id": 4
     },
     {
-      "day": "Friday",
-      "exercise1Title": "Bicep Curls",
-      "exercise1Sets": "3",
-      "exercise1Reps": "2",
-      "id": 5
-    },
-    {
       "day": "Saturday",
       "exercise1Title": "Squat",
       "exercise1Sets": "5",
@@ -70,13 +63,6 @@
       "cardioTime": "60 minutes",
       "userId": "103769476507895371726",
       "id": 7
-    },
-    {
-      "day": "Monday",
-      "exercise1Title": "Bicep Curls",
-      "exercise1Sets": "3",
-      "exercise1Reps": "2",
-      "id": 8
     },
     {
       "day": "Tuesday",

@@ -16,8 +16,8 @@ class WorkoutDelete extends React.Component {
 
     return (
       <React.Fragment>
-        <Link to="/" className="ui inverted blue button">Cancel</Link>
-        <div onClick={() => this.props.deleteWorkout(id)} className="ui negative button">Delete</div>
+        <Link to="/" className="ui inverted blue button" data-aos="flip-right">Cancel</Link>
+        <div onClick={() => this.props.deleteWorkout(id)} className="ui negative button" data-aos="flip-right">Delete</div>
       </React.Fragment>
     );
   }

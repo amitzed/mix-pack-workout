@@ -34,12 +34,7 @@ class WorkoutForm extends React.Component {
 
   render() {
     return (
-      <div className="ui inverted segment">
-        <h2 className="ui center aligned icon header">
-          <i className="circular green flask icon"></i>
-          Enter Workout Details
-        </h2>
-
+      <div className="ui inverted segment" data-aos="flip-right">
         <form
           className="ui inverted form large error form-basic"
           onSubmit={this.props.handleSubmit(this.onSubmit)}

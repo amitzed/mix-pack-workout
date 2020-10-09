@@ -13,7 +13,7 @@ const VideoFocus = ({ video }) => {
 
   return (
     <div>
-      <div className="ui embed workout-video-focus-wrapper">
+      <div className="ui embed workout-video-focus-wrapper" data-aos="flip-up">
         <iframe className="embed-responsive-item" src={videoSource} title="Video Player" />
       </div>
       <hr />

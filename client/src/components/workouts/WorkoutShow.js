@@ -53,7 +53,7 @@ class WorkoutShow extends React.Component {
           <tbody>
 
             <tr>
-              <td className="two wide column">Exercise 1</td>
+              <td className="two wide column" data-aos="fade-up">Exercise 1</td>
               <td>
                 {
                   !exercise1Title
@@ -66,7 +66,7 @@ class WorkoutShow extends React.Component {
             </tr>
 
             <tr>
-              <td>Exercise 2</td>
+              <td data-aos="fade-up">Exercise 2</td>
                 <td>
                   {
                     !exercise2Title
@@ -79,7 +79,7 @@ class WorkoutShow extends React.Component {
             </tr>
 
             <tr>
-              <td>Exercise 3</td>
+              <td data-aos="fade-up">Exercise 3</td>
                 <td>
                   {
                     !exercise3Title
@@ -92,7 +92,7 @@ class WorkoutShow extends React.Component {
             </tr>
 
             <tr>
-              <td>Cardio</td>
+              <td data-aos="fade-up">Cardio</td>
                 <td>
                   {
                     !cardioType

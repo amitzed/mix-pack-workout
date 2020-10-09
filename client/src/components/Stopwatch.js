@@ -47,7 +47,7 @@ class Stopwatch extends React.Component {
           <div className="ui standard modal visible active stopwatch-wrapper" onClick={(e) => e.stopPropagation()}>
             <br/>
             <h5>Click Outside This Box To Return To Home Screen</h5>
-            <div className="stopwatch-app">
+            <div className="stopwatch-app" data-aos="flip-up">
               <div className="stopwatch-header"><i className="stopwatch icon"></i></div>
               <div className="stopwatch-display">
                 {minutes} : {seconds} : {centiseconds}

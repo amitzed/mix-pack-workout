@@ -18,7 +18,7 @@ class WorkoutList extends React.Component {
             <Link to={`/workouts/edit/${workout.id}`} className="ui icon button blue pencil-icon-wrapper">
               <i className="icon pencil alternate" />
             </Link>
-            <div className="or"></div>
+            <div className="or" data-aos="zoom-in"></div>
             <Link to={`workouts/delete/${workout.id}`} className="circular ui icon button red">
               <i className="icon trash alternate outline" />
             </Link>
@@ -50,7 +50,7 @@ class WorkoutList extends React.Component {
           <div className="ui segments">
 
             <Link to={`/workouts/${workout.id}`}>
-              <div className="ui inverted center aligned segment calendar-icon-wrapper" style={{margin: '1em'}}>
+              <div className="ui inverted center aligned segment calendar-icon-wrapper" style={{margin: '1em'}} data-aos="fade-up">
                 <i className="large middle aligned icon calendar alternate outline day-icon" />
                 <p>{workout.day}</p>
               </div>
@@ -76,7 +76,7 @@ class WorkoutList extends React.Component {
                     ?
                     null
                     :
-                    <div className="ui segments">
+                    <div className="ui segments" data-aos="zoom-in">
                       <div className="ui horizontal segments">
                         <div className="ui secondary inverted segment">
                           <p>Sets: {workout.exercise1Sets}</p>
@@ -103,7 +103,7 @@ class WorkoutList extends React.Component {
                     ?
                     null
                     :
-                    <div className="ui segments">
+                    <div className="ui segments" data-aos="zoom-in">
                       <div className="ui horizontal segments">
                         <div className="ui secondary inverted segment">
                           <p>Sets: {workout.exercise2Sets}</p>
@@ -130,7 +130,7 @@ class WorkoutList extends React.Component {
                     ?
                     null
                     :
-                    <div className="ui segments">
+                    <div className="ui segments" data-aos="zoom-in">
                       <div className="ui horizontal segments">
                         <div className="ui secondary inverted segment">
                           <p>Sets: {workout.exercise3Sets}</p>
@@ -147,7 +147,7 @@ class WorkoutList extends React.Component {
                   ?
                   null
                   :
-                  <div className="ui segments">
+                  <div className="ui segments" data-aos="zoom-in">
                     <p>Cardio: {workout.cardioType}</p>
                     <div className="ui horizontal segments">
                       <div className="ui secondary inverted segment">
