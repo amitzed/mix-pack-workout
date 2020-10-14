@@ -1,5 +1,5 @@
 # Mix Pack Workout (Project Images Below)
-### A CRUD app to customize a workout and set a workout schedule.
+### A CRUD app to customize a workout and set a workout schedule (including Google Auth).
 
 ## React / Redux with backend server
 ## Login with Google authentication
