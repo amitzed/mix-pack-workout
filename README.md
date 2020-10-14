@@ -1,4 +1,4 @@
-# Mix Pack Workout
+# Mix Pack Workout (Project Images Below)
 ### A CRUD app to customize a workout and set a workout schedule.
 
 ## React / Redux with backend server
