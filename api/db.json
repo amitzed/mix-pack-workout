@@ -1,7 +1,7 @@
 {
   "workouts": [
     {
-      "day": "Tuesday",
+      "day": "Demo Tues",
       "exercise1Title": "Squat",
       "exercise1Sets": "5",
       "exercise1Reps": "4",
@@ -13,11 +13,10 @@
       "exercise3Reps": "4",
       "cardioType": "Treadmill",
       "cardioTime": "20",
-      "userId": "103769476507895371726",
       "id": 2
     },
     {
-      "day": "Wednesday",
+      "day": "Demo Wed",
       "exercise1Title": "Squat",
       "exercise1Sets": "5",
       "exercise1Reps": "4",
@@ -29,19 +28,25 @@
       "exercise3Reps": "5",
       "cardioType": "Lateral Machine",
       "cardioTime": "20",
-      "userId": "103769476507895371726",
       "id": 3
     },
     {
-      "day": "Thursday",
-      "exercise1Title": "No Lifts only do Cardio",
+      "day": "Demo Thurs",
+      "exercise1Title": "Squat",
+      "exercise1Sets": "5",
+      "exercise1Reps": "4",
+      "exercise2Title": "Bench Press",
+      "exercise2Sets": "5",
+      "exercise2Reps": "4",
+      "exercise3Title": "Barbell Row",
+      "exercise3Sets": "5",
+      "exercise3Reps": "4",
       "cardioType": "Jogging",
       "cardioTime": "60 minutes",
-      "userId": "103769476507895371726",
       "id": 4
     },
     {
-      "day": "Saturday",
+      "day": "Demo Fri",
       "exercise1Title": "Squat",
       "exercise1Sets": "5",
       "exercise1Reps": "4",
@@ -53,24 +58,7 @@
       "exercise3Reps": "5",
       "cardioType": "Lateral Machine",
       "cardioTime": "20",
-      "userId": "103769476507895371726",
       "id": 6
-    },
-    {
-      "day": "Sunday",
-      "exercise1Title": "No Lifts only Cardio",
-      "cardioType": "Jogging",
-      "cardioTime": "60 minutes",
-      "userId": "103769476507895371726",
-      "id": 7
-    },
-    {
-      "day": "Tuesday",
-      "exercise1Title": "Bicep Curls",
-      "exercise1Sets": "3",
-      "exercise1Reps": "2",
-      "userId": "103769476507895371726",
-      "id": 9
     }
   ]
 }

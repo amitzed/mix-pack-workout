@@ -43,127 +43,151 @@ class WorkoutList extends React.Component {
     }
   }
 
-  renderList() {
-    return this.props.workouts.map(workout => {
+  renderSignedInMessage() {
+    if(this.props.isSignedIn) {
       return (
-        <div className="ui two column centered workout-list-wrapper" key={workout.id}>
-          <div className="ui segments">
-
-            <Link to={`/workouts/${workout.id}`}>
-              <div className="ui inverted center aligned segment calendar-icon-wrapper" style={{margin: '1em'}} data-aos="fade-up">
-                <i className="large middle aligned icon calendar alternate outline day-icon" />
-                <p>{workout.day}</p>
-              </div>
-            </Link>
-
-            <div className="ui segments data-wrapper">
-              <div className="ui inverted center aligned segment">
-                <Link to={`/workouts/${workout.id}`}>
-                  <i className="large circular green flask icon flask-icon"></i>
-                </Link>
-                <p>
-                  {
-                    !workout.exercise1Title
-                    ?
-                    null
-                    :
-                    <span>Exercise 1: {workout.exercise1Title}</span>
-                  }
-                </p>
-
-                  {
-                    !workout.exercise1Sets && !workout.exercise1Reps
-                    ?
-                    null
-                    :
-                    <div className="ui segments" data-aos="zoom-in">
-                      <div className="ui horizontal segments">
-                        <div className="ui secondary inverted segment">
-                          <p>Sets: {workout.exercise1Sets}</p>
-                        </div>
-                        <div className="ui tertiary inverted segment">
-                          <p>Reps: {workout.exercise1Reps}</p>
-                        </div>
-                      </div>
-                    </div>
-                  }
-
-                <p>
-                  {
-                    !workout.exercise2Title
-                    ?
-                    null
-                    :
-                    <span>Exercise 2: {workout.exercise2Title}</span>
-                  }
-                </p>
-
-                  {
-                    !workout.exercise2Sets && !workout.exercise2Reps
-                    ?
-                    null
-                    :
-                    <div className="ui segments" data-aos="zoom-in">
-                      <div className="ui horizontal segments">
-                        <div className="ui secondary inverted segment">
-                          <p>Sets: {workout.exercise2Sets}</p>
-                        </div>
-                        <div className="ui tertiary inverted segment">
-                          <p>Reps: {workout.exercise2Reps}</p>
-                        </div>
-                      </div>
-                    </div>
-                  }
-
-                <p>
-                  {
-                    !workout.exercise3Title
-                    ?
-                    null
-                    :
-                    <span>Exercise 3: {workout.exercise3Title}</span>
-                  }
-                </p>
-
-                  {
-                    !workout.exercise3Sets && !workout.exercise3Reps
-                    ?
-                    null
-                    :
-                    <div className="ui segments" data-aos="zoom-in">
-                      <div className="ui horizontal segments">
-                        <div className="ui secondary inverted segment">
-                          <p>Sets: {workout.exercise3Sets}</p>
-                        </div>
-                        <div className="ui tertiary inverted segment">
-                          <p>Reps: {workout.exercise3Reps}</p>
-                        </div>
-                      </div>
-                    </div>
-                  }
-
-                {
-                  !workout.cardioTime || !workout.cardioType
-                  ?
-                  null
-                  :
-                  <div className="ui segments" data-aos="zoom-in">
-                    <p>Cardio: {workout.cardioType}</p>
-                    <div className="ui horizontal segments">
-                      <div className="ui secondary inverted segment">
-                        <p>Time: {workout.cardioTime}</p>
-                      </div>
-                    </div>
-                  </div>
-                }
-
-              </div>
-            </div>
-            {this.renderAdmin(workout)}
-          </div>
+        <div>
+          <br />
+          <span style={{color: 'red'}}>* Dummy data below for demo purposes, but you can create / edit / delete your own data *</span>
         </div>
       )
-    })
+    }
+  }
+
+  renderSignedOutMessage() {
+    if(!this.props.isSignedIn) {
+      return (
+        <div>
+          <br />
+          <span>Please Log In To Create Or View Your Workouts</span>
+        </div>
+      )
+    }
+  }
+
+  renderList() {
+    if(this.props.isSignedIn) {
+      return this.props.workouts.map(workout => {
+        return (
+          <div className="ui two column centered workout-list-wrapper" key={workout.id}>
+            <div className="ui segments">
+
+              <Link to={`/workouts/${workout.id}`}>
+                <div className="ui inverted center aligned segment calendar-icon-wrapper" style={{margin: '1em'}} data-aos="fade-up">
+                  <i className="large middle aligned icon calendar alternate outline day-icon" />
+                  <p>{workout.day}</p>
+                </div>
+              </Link>
+
+              <div className="ui segments data-wrapper">
+                <div className="ui inverted center aligned segment">
+                  <Link to={`/workouts/${workout.id}`}>
+                    <i className="large circular green flask icon flask-icon"></i>
+                  </Link>
+                  <p>
+                    {
+                      !workout.exercise1Title
+                      ?
+                      null
+                      :
+                      <span>Exercise 1: {workout.exercise1Title}</span>
+                    }
+                  </p>
+
+                    {
+                      !workout.exercise1Sets && !workout.exercise1Reps
+                      ?
+                      null
+                      :
+                      <div className="ui segments" data-aos="zoom-in">
+                        <div className="ui horizontal segments">
+                          <div className="ui secondary inverted segment">
+                            <p>Sets: {workout.exercise1Sets}</p>
+                          </div>
+                          <div className="ui tertiary inverted segment">
+                            <p>Reps: {workout.exercise1Reps}</p>
+                          </div>
+                        </div>
+                      </div>
+                    }
+
+                  <p>
+                    {
+                      !workout.exercise2Title
+                      ?
+                      null
+                      :
+                      <span>Exercise 2: {workout.exercise2Title}</span>
+                    }
+                  </p>
+
+                    {
+                      !workout.exercise2Sets && !workout.exercise2Reps
+                      ?
+                      null
+                      :
+                      <div className="ui segments" data-aos="zoom-in">
+                        <div className="ui horizontal segments">
+                          <div className="ui secondary inverted segment">
+                            <p>Sets: {workout.exercise2Sets}</p>
+                          </div>
+                          <div className="ui tertiary inverted segment">
+                            <p>Reps: {workout.exercise2Reps}</p>
+                          </div>
+                        </div>
+                      </div>
+                    }
+
+                  <p>
+                    {
+                      !workout.exercise3Title
+                      ?
+                      null
+                      :
+                      <span>Exercise 3: {workout.exercise3Title}</span>
+                    }
+                  </p>
+
+                    {
+                      !workout.exercise3Sets && !workout.exercise3Reps
+                      ?
+                      null
+                      :
+                      <div className="ui segments" data-aos="zoom-in">
+                        <div className="ui horizontal segments">
+                          <div className="ui secondary inverted segment">
+                            <p>Sets: {workout.exercise3Sets}</p>
+                          </div>
+                          <div className="ui tertiary inverted segment">
+                            <p>Reps: {workout.exercise3Reps}</p>
+                          </div>
+                        </div>
+                      </div>
+                    }
+
+                  {
+                    !workout.cardioTime || !workout.cardioType
+                    ?
+                    null
+                    :
+                    <div className="ui segments" data-aos="zoom-in">
+                      <p>Cardio: {workout.cardioType}</p>
+                      <div className="ui horizontal segments">
+                        <div className="ui secondary inverted segment">
+                          <p>Time: {workout.cardioTime}</p>
+                        </div>
+                      </div>
+                    </div>
+                  }
+
+                </div>
+              </div>
+              {this.renderAdmin(workout)}
+            </div>
+          </div>
+        )
+      })
+    }
   }
 
   render() {
@@ -173,6 +197,8 @@ class WorkoutList extends React.Component {
           <i className="circular green eye dropper icon dropper-icon" />
           Your Workouts
           {this.renderCreate()}
+          {this.renderSignedInMessage()}
+          {this.renderSignedOutMessage()}
         </h2>
 
         <div className="ui stackable four column grid">
